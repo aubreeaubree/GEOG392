@@ -37,13 +37,15 @@ class Circle(Shape):
 #access file in the correct directory and iterate though each line
 file = open("shapes.txt", 'r')
 lines = file.readlines()
-
+completeList = []
 for line in lines:
-    objectShape = line.rsplit("")
+    # goes through and removes commas so lines are 
+    objectShape = line.rsplit(",")
     if objectShape[0] == 'Rectangle':
-        Rectangle.length == objectShape[1]
-        Rectangle.width == objectShape[2]
-    print(line)
+        length = int(objectShape[1])
+        width = int(objectShape[2])
+        completeList.append(Rectangle(length, width))
+
 
 
 
