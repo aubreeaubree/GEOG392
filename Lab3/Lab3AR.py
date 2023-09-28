@@ -39,14 +39,22 @@ file = open("shapes.txt", 'r')
 lines = file.readlines()
 completeList = []
 for line in lines:
-    # goes through and removes commas so lines are 
+    # goes through and removes commas so lines are like 
+    # ['Rectangle', '1', '5\n'] - intsare currently strings and need to be casted
     objectShape = line.rsplit(",")
     if objectShape[0] == 'Rectangle':
         length = int(objectShape[1])
         width = int(objectShape[2])
         completeList.append(Rectangle(length, width))
+    elif objectShape[0] == 'Triangle':
+        length = int(objectShape[1])
+        width = int(objectShape[2])
+        completeList.append(Triangle(length, width))
+    elif objectShape[0] == 'Circle':
+        radius = int(objectShape[1])
+        completeList.append(Circle(radius))
 
-
-
+for i in completeList:
+    print(round(i.getArea(),2))
 
 file.close()
