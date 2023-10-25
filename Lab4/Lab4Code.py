@@ -15,8 +15,8 @@ arcpy.FeatureClassToGeodatabase_conversion(Parking_Garages, name_data)
 
 Parking_Points = name_data + "\\Parking_Garages"
 Campus_Data = r"D:\\Aubree's GIS Stuff\\GEOG392\\Lab4\\Campus.gdb"
-Buildings = Campus_Data + "\\Buildings"
-
+Buildings = Campus_Data + "\\Structures"
+#Building_Dest = name_data + '\\' + "Buildings"
 
 #step 4
 #arcpy.Copy_management(,)
