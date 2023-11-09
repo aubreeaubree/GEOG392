@@ -100,12 +100,12 @@ class RenderTool(object):
             symbology.renderer.classificationField = "Shape_Area"
 
             arcpy.SetProgressorPosition(start + step + step)
-            arcpy.StepProgressorLabel("Setting render...")
+            arcpy.SetProgressorLabel("Setting render...")
             time.sleep(readTime)
             arcpy.AddMessage("Setting render...")
 
             symbology.renderer.breakCount = 5
-            symbology.renderer.colorRamp = project.listColorRamps('Orange (5 Classes)')[0]
+            symbology.renderer.colorRamp = project.listColorRamps('Oranges (5 Classes)')[0]
             layer.symbology = symbology
 
             arcpy.SetProgressorPosition(max_t)
