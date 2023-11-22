@@ -1,16 +1,3 @@
-{
-    "configurations": [
-        {
-            "name": "Win32",
-            "includePath": [
-                "${workspaceFolder}/**"
-            ],
-            "defines": [
-                "_DEBUG",
-                "UNICODE",
-                "_UNICODE"
-            ]
-        }
-    ],
-    "version": 4
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:fdcb102f4856235745e6f824410eb411ca58681485420bd1eacb6d8f4f1b7304
+size 303
