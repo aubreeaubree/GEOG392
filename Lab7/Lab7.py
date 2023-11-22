@@ -13,7 +13,7 @@ azimuth = 315
 altitude = 45
 shadows = "NO_SHADOWS"
 z_factor = 1
-arcpy.ddd.HillShade(src + r"\\n30_w097_1arc_v3.tif", res + r"\\hillshade.tif", azimuth,altitude, shadows, z_factor)
+arcpy.ddd.HillShade(src + r"n30_w097_1arc_v3.tif", res + r"hillshade.tif", azimuth,altitude, shadows, z_factor)
 output_measurement = "DEGREE"
 z_factor = 1
-arcpy.ddd.Slope(src + r"\\n30_w097_1arc_v3.tif", res + r"\\slopes.tif", output_measurement, z_factor)
+arcpy.ddd.Slope(src + r"n30_w097_1arc_v3.tif", res + r"slopes.tif", output_measurement, z_factor)
